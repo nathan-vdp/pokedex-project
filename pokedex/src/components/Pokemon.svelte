@@ -1,12 +1,5 @@
 <script>
-
-  export let name;
-
-//   const fetchPokemonData = async (name) => {
-//   return fetch(`https://pokeapi.co/api/v2/pokemon/${name}`).then((res) =>
-//     res.json()
-//   );
-// };
+export let name;
 
 import { fetchPokemonData } from "../utils/fetchPokemonData";
 import loadingGif from "../assets/loading.gif";

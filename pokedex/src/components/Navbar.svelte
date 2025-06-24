@@ -1,5 +1,4 @@
 <script>
-  // import { Link } from "svelte-navigator";
   export let searchValue = "";
 
   function handleInput(event) {
@@ -89,41 +88,3 @@
     </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Back up navbar -->
-<!-- <nav
-  class="flex justify-between items-center rounded-md p-4 w-full text-slate-900 font-bold text-xl"
->
-  <div>
-    <Link to="/">Pokedex</Link>
-  </div>
-
-  <div class="items-center">
-    <select
-      id="color"
-      class="rounded-md h-9 bg-transparent w-50 md:inline-block"
-      bind:value={selectedGeneration}
-    >
-      {#each generations as generation (generation.name)}
-        <option value={generation}>{generation.name}</option>
-      {/each}
-    </select>
-    <input
-      class="text-center font-light h-10 w-24 ml-5 rounded-md focus:outline-none border-2 focus:border-red-500"
-      type="text"
-      placeholder="Search"
-      on:input={handleInput}
-      bind:value={searchValue}
-    />
-  </div>
-</nav> -->

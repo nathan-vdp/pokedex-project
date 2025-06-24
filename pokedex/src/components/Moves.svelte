@@ -1,15 +1,14 @@
 <script>
-  import { compute_rest_props } from "svelte/internal";
   import { writable } from "svelte/store";
 
   export let data;
 
   let movesData = writable([]);
 
-  $: totalPages = Math.ceil($movesData.length / movesPerPage);
-
-  let currentPage = writable(1);
   const movesPerPage = 10;
+  let currentPage = writable(1);
+
+  $: totalPages = Math.ceil($movesData.length / movesPerPage);
 
   $: if (data && data.moves) {
     const movesPromises = data.moves.map(async (move) => {
@@ -91,7 +90,7 @@
             >
           {:else}
             <td class="border border-slate-200 px-4 py-2 bg-slate-100">-</td>
-          
+
         {/if}
 
         <td
