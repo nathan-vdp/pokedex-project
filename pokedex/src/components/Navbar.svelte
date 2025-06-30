@@ -6,7 +6,7 @@
   }
 
   let generations = [
-    { name: "All generations", offest: 0, limit: 1017 },
+    { name: "All generations", offset: 0, limit: 1017 },
     { name: "Gen 1", offset: 0, limit: 151 },
     { name: "Gen 2", offset: 151, limit: 100 },
     { name: "Gen 3", offset: 251, limit: 135 },
